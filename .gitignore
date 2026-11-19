@@ -1,6 +1,13 @@
 Gemfile.lock
 .byebug_history
 db/*.db
+db/*.sqlite
+
+bin
+vendor
+.direnv
+.pre-commit-config.yml
+rake
 
 # Mac
 .DS_Store
