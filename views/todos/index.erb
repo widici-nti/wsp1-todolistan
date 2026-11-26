@@ -6,6 +6,10 @@
       <a href="/todos/<%= todo["id"] %>">
         <%= todo["name"] %>
       </a>
+
+      <form action="/todos/<%= todo["id"] %>/update">
+        <input type="submit" value="Färdig">
+      </form>
     </li>
   <% end %>
 </ul>

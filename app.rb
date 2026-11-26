@@ -38,4 +38,13 @@ class App < Sinatra::Base
     @todo = todo id
     erb(:'todos/show')
   end
+
+  post '/todos' do
+    values = params.values
+    values.append(0)
+    ap values
+
+    db.execute('INSERT INTO todos (name, desc, completed) VALUES (?, ?, ?)', values)
+    redirect(:'/todos') 
+  end
 end
