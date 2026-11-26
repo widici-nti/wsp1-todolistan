@@ -65,6 +65,10 @@
 
             shellHook = ''
               export PATH="$PWD/bin:$PATH"
+
+              alias rubocop='bundle exec rubocop'
+              alias ruby-lsp='bundle exec ruby-lsp'
+              alias rake='bundle exec rake'
             '';
           };
         };
